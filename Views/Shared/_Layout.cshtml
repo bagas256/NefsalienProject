@@ -3,15 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - NefsalienProject</title>
+    <title>@ViewData["Title"] - Nefsalien</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">NefsalienProject</a>
+                <a class="navbar-brand text-white" asp-area="" asp-controller="Home" asp-action="Index">Nefsalien</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -19,11 +23,14 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Privacy">About</a>
                         </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class="text-white"><span class=""></span> Login</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,9 +42,14 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted">
         <div class="container">
-            &copy; 2022 - NefsalienProject - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <a class="text-white" asp-area="" asp-controller="Home" asp-action="Privacy">Copyright &copy; Nefsalien, @DateTime.Now.Year</a>
+        </div>
+    </footer>
+    <footer class="footer text-muted text-right">
+        <div class="container">
+            <span class="text-white">Follow Us: &ensp; <a href="https://instagram.com/bagaswiijaya"><i class="text-white fa-brands fa-instagram"></i></a>&nbsp; <a href="https://www.linkedin.com/in/bagaswijaya/"><i class="text-white fa-brands fa-linkedin-in"></i></a>&nbsp; <a href="https://dribbble.com/bagaswijaya"><i class="text-white fa-brands fa-dribbble"></i></a></span>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
